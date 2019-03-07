@@ -1,2 +1,1 @@
-# android_device_yu_garlic
-Device tree for building halium
+Device tree for YU Yureka Black (YU5040)
