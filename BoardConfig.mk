@@ -45,7 +45,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
-TARGET_KERNEL_CONFIG := lineage_garlic_defconfig
+TARGET_KERNEL_CONFIG := garlic_defconfig
 TARGET_KERNEL_SOURCE := kernel/yu/msm8937
 
 # ANT
@@ -116,7 +116,7 @@ BLUETOOTH_HCI_USE_MCT := true
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
-TARGET_TS_MAKEUP := true
+TARGET_TS_MAKEUP := false
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := false
