@@ -100,9 +100,9 @@ etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 bin/btnvtool
 bin/hci_qcomm_init
 etc/permissions/btmultisim.xml
-vendor/lib64/libbt-vendor.so
+#vendor/lib64/libbt-vendor.so
 vendor/lib64/libbtnv.so
-vendor/lib/libbt-vendor.so
+#vendor/lib/libbt-vendor.so
 vendor/lib/libbtnv.so
 
 # CNE
