@@ -429,7 +429,7 @@ lib64/libfpnav.so
 lib64/libfpservice.so
 
 # FM
-bin/fm_qsoc_patches
+#bin/fm_qsoc_patches
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8937.so
@@ -602,7 +602,7 @@ etc/permissions/imscm.xml
 etc/permissions/qti-vzw-ims-internal.xml
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-ims-rcscmjni.so
-vendor/lib64/lib-imscamera.so
+#vendor/lib64/lib-imscamera.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
 vendor/lib64/lib-imsrcs.so
@@ -867,7 +867,7 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
 # Subsystem restart
-bin/ssr_diag
+#bin/ssr_diag
 
 # SCVE
 vendor/lib64/libscveBlobDescriptor.so
@@ -936,7 +936,7 @@ vendor/lib/libTimeService.so
 etc/firmware/ice40.bin
 
 # WFD
-bin/wfdservice
+#bin/wfdservice
 vendor/lib64/libwfdavenhancements.so
 vendor/lib64/libwfdcommonutils.so
 vendor/lib64/libwfdhdcpcp.so
@@ -980,13 +980,13 @@ vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 
 # Wi-Fi
 bin/cnss-daemon
-bin/fstman
+#bin/fstman
 
 # TODO :
 bin/ATFWD-daemon
-bin/ftmdaemon
-bin/ssr_setup
-bin/subsystem_ramdump
+#bin/ftmdaemon
+#bin/ssr_setup
+#bin/subsystem_ramdump
 lib64/libdashplayer.so
 lib64/libextmedia_jni.so
 lib64/libpdmapper.so
