@@ -106,10 +106,6 @@ vendor/lib/libbt-vendor.so
 vendor/lib/libbtnv.so
 
 # CNE
--framework/cneapiclient.jar
--framework/com.quicinc.cne.jar
--framework/ConnectivityExt.jar
--priv-app/CNEService/CNEService.apk
 bin/cnd
 etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
@@ -370,10 +366,6 @@ vendor/lib/libmmcamera_isp_wb40.so
 bin/hvdcp_opti
 
 # DPM
--framework/com.qti.dpmframework.jar
--framework/dpmapi.jar
--framework/tcmclient.jar
--priv-app/dpmserviceapp/dpmserviceapp.apk
 bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
@@ -444,12 +436,8 @@ vendor/lib/hw/gatekeeper.msm8937.so
 vendor/lib64/hw/gatekeeper.msm8937.so
 
 # GPS
--framework/com.qti.location.sdk.jar
--framework/com.qualcomm.location.vzw_library.jar
--framework/izat.xt.srv.jar
 -lib64/libloc_api_v02.so
 -lib64/libloc_ds_api.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
 bin/loc_launcher
 bin/lowi-server
 bin/xtwifi-client
@@ -606,11 +594,6 @@ etc/firmware/a530v3_gpmu.fw2
 etc/firmware/a530v3_seq.fw2
 
 # IMS
--framework/imscmlibrary.jar
--framework/rcsimssettings.jar
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
--vendor/framework/qti-vzw-ims-internal.jar
 bin/ims_rtp_daemon
 bin/imscmservice
 bin/imsdatadaemon
@@ -763,7 +746,6 @@ vendor/lib64/libwms.so
 vendor/lib/libwms.so
 
 # Network
--priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib64/libconnctrl.so
 vendor/lib64/libQtiTether.so
 vendor/lib/libconnctrl.so
@@ -794,8 +776,6 @@ vendor/lib64/libperipheral_client.so
 vendor/lib/libperipheral_client.so
 
 # Postprocessing
--framework/com.qti.snapdragon.sdk.display.jar
--vendor/app/colorservice/colorservice.apk
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 vendor/bin/mm-pp-dpps
 vendor/lib64/libdisp-aba.so
@@ -845,17 +825,6 @@ vendor/lib/libquipc_os_api.so
 vendor/lib/libsmemlog.so
 
 # Radio
--app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--app/fastdormancy/fastdormancy.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/shutdownlistener/shutdownlistener.apk
--framework/embmslibrary.jar
--framework/qcrilhook.jar
--framework/qcnvitems.jar
--framework/qti-telephony-common.jar
--framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 bin/netmgrd
 bin/radish
 bin/rmt_storage
@@ -959,7 +928,6 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
--app/TimeService/TimeService.apk
 bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
