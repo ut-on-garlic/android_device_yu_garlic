@@ -71,10 +71,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init/ofono.override:system/halium/etc/init/ofono.override
 
-# udev rules
+# Ubuntu Overlay Files
 PRODUCT_COPY_FILES += \
-    device/yu/garlic/ubuntu/system/halium/usr/lib/lxc-android-config/70-garlic.rules:system/halium/lib/udev/rules.d/70-garlic.rules
-
+    $(LOCAL_PATH)/ubuntu/system/halium/usr/lib/lxc-android-config/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
+    
 # Pulseaudio
 PRODUCT_COPY_FILES += \
     device/yu/garlic/ubuntu/system/halium/etc/pulse/touch.pa:system/halium/etc/pulse/touch.pa
