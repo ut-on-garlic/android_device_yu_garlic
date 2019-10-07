@@ -64,7 +64,26 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.print.xml:system/etc/permissions/android.software.print.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    $(LOCAL_PATH)/ubuntu/system/halium/etc/init/ofono.override:system/halium/etc/init/ofono.override
+
+# udev rules
+PRODUCT_COPY_FILES += \
+    device/yu/garlic/ubuntu/system/halium/usr/lib/lxc-android-config/70-garlic.rules:system/halium/lib/udev/rules.d/70-garlic.rules
+
+# Pulseaudio
+PRODUCT_COPY_FILES += \
+    device/yu/garlic/ubuntu/system/halium/etc/pulse/touch.pa:system/halium/etc/pulse/touch.pa
+
+#halium porting
+PRODUCT_PACKAGES += \
+    libcamera_compat_layer \
+    libcamera_compat_layer_32 \
+    gst-droid
+
+# Battery charging animation for offline charging mode
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Audio
 PRODUCT_PACKAGES += \
