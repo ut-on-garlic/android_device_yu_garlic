@@ -964,3 +964,11 @@ on property:vold.decrypt=trigger_restart_min_framework
 
 on property:vold.decrypt=trigger_restart_framework
     restart time_daemon
+
+service minimedia /system/bin/minimediaservice
+    class main
+    user media
+    group audio camera
+    ioprio rt 4
+#   hack to make recorded video playback work
+    setenv LD_PRELOAD /system/lib/libOmxVdec.so

@@ -85,6 +85,14 @@ PRODUCT_PACKAGES += \
     libcamera_compat_layer_32 \
     gst-droid
 
+# UBPorts
+ PRODUCT_PACKAGES += \
+     libubuntu_application_api \
+     libaudioflingerglue \
+     libdroidmedia \
+     libminisf \
+     minimediaservice
+
 # Battery charging animation for offline charging mode
 PRODUCT_PACKAGES += \
     charger_res_images
