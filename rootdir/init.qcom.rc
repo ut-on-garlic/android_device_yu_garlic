@@ -972,3 +972,9 @@ service minimedia /system/bin/minimediaservice
     ioprio rt 4
 #   hack to make recorded video playback work
     setenv LD_PRELOAD /system/lib/libOmxVdec.so
+
+service init_setup_first_boot /system/bin/sh /system/etc/init_setup_first_boot.sh
+    class main
+    user root
+    group root
+    oneshot
