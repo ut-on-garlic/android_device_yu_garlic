@@ -70,7 +70,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init/ofono.override:system/halium/etc/init/ofono.override \
-    $(LOCAL_PATH)/ubuntu/system/halium/etc/init_setup_first_boot.sh:system/etc/init_setup_first_boot.sh
+    $(LOCAL_PATH)/ubuntu/system/halium/etc/init_setup_first_boot.sh:system/etc/init_setup_first_boot.sh \
+    $(LOCAL_PATH)/ubuntu/system/halium/etc/init_hcismd_up.sh:system/etc/init_hcismd_up.sh
 
 # Ubuntu Overlay Files
 PRODUCT_COPY_FILES += \
