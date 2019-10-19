@@ -89,11 +89,26 @@ PRODUCT_PACKAGES += \
 
 # UBPorts
  PRODUCT_PACKAGES += \
-     libubuntu_application_api \
-     libaudioflingerglue \
-     libdroidmedia \
-     libminisf \
-     minimediaservice
+    libubuntu_application_api \
+    libmedia_compat_layer \
+    libdroidmedia \
+    libminisf \
+    miniafservice \
+    minimediaservice \
+    minisfservice \
+    libcameraservice \
+    libui_compat_layer \
+    libsf_compat_layer \
+    libaudioflingerglue \
+    camera_service
+
+# telepathy-ofono quirks
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.t-o.quirk.forcesink=sink.primary_output \
+    ro.t-o.quirk.forcesource=source.surround_sound_primary_input
+
+#droidmedia
+MINIMEDIA_SENSORSERVER_DISABLE := 1
 
 # Battery charging animation for offline charging mode
 PRODUCT_PACKAGES += \
