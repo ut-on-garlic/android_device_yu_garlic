@@ -75,8 +75,12 @@ PRODUCT_COPY_FILES += \
 
 # Ubuntu Overlay Files
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ubuntu/system/halium/usr/lib/lxc-android-config/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
-    
+    $(LOCAL_PATH)/ubuntu/system/halium/usr/lib/lxc-android-config/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/hardware/graphics.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/hardware/video.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android
+
 # Pulseaudio
 PRODUCT_COPY_FILES += \
     device/yu/garlic/ubuntu/system/halium/etc/pulse/touch.pa:system/halium/etc/pulse/touch.pa
