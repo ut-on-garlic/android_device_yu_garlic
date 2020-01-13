@@ -72,7 +72,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init/ofono.override:system/halium/etc/init/ofono.override \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init_setup_first_boot.sh:system/etc/init_setup_first_boot.sh \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init_hcismd_up.sh:system/etc/init_hcismd_up.sh
-
 # Ubuntu Overlay Files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/system/halium/usr/lib/lxc-android-config/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
@@ -110,6 +109,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.t-o.quirk.forcesink=sink.primary_output \
     ro.t-o.quirk.forcesource=source.surround_sound_primary_input
+
+# force caf driver on mir
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.qti_bsp.abi=1
 
 #droidmedia
 MINIMEDIA_SENSORSERVER_DISABLE := 1
