@@ -71,7 +71,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init/ofono.override:system/halium/etc/init/ofono.override \
     $(LOCAL_PATH)/ubuntu/system/halium/etc/init_setup_first_boot.sh:system/etc/init_setup_first_boot.sh \
-    $(LOCAL_PATH)/ubuntu/system/halium/etc/init_hcismd_up.sh:system/etc/init_hcismd_up.sh
+    $(LOCAL_PATH)/ubuntu/system/halium/etc/init_hcismd_up.sh:system/etc/init_hcismd_up.sh \
+    $(LOCAL_PATH)/ubuntu/usensord.conf:system/halium/usr/share/upstart/sessions/usensord.conf \
+    $(LOCAL_PATH)/ubuntu/config.xml:system/halium/usr/share/powerd/device_configs/config-default.xml \
+    $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
+
 # Ubuntu Overlay Files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/system/halium/usr/lib/lxc-android-config/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
@@ -97,13 +101,10 @@ PRODUCT_PACKAGES += \
     libdroidmedia \
     libminisf \
     miniafservice \
-    minimediaservice \
-    minisfservice \
     libcameraservice \
     libui_compat_layer \
     libsf_compat_layer \
     libaudioflingerglue \
-    camera_service
 
 # telepathy-ofono quirks
 PRODUCT_PROPERTY_OVERRIDES += \
