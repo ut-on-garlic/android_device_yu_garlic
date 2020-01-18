@@ -106,11 +106,13 @@
   /{,android/}odm/lib{,64}/**.so m,
 
   # Halium/Ubports-Yureka black adaptation
-  @{PROC}/vmstat                 r,
-  @{PROC}/@{pid}/mounts          r,
-  /sys/devices/soc0/soc_id       r,
-  /dev/disk/by-label/**          r,
-  #/dev/disk/by-label**           rw,
+  @{PROC}/@{pid}/loginuid           r,
+  @{PROC}/@{pid}/task/@{tid}/status r,
+  @{PROC}/vmstat                    r,
+  @{PROC}/@{pid}/mounts             r,
+  /sys/devices/soc0/soc_id          r,
+  /dev/disk/by-label/**             r,
+  #/dev/disk/by-label**             rw,
 
   # /dev/null is pretty harmless and frequently used
   /dev/null                      rw,
