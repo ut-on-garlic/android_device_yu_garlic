@@ -88,23 +88,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/yu/garlic/ubuntu/system/halium/etc/pulse/touch.pa:system/halium/etc/pulse/touch.pa
 
-#halium porting
-PRODUCT_PACKAGES += \
-    libcamera_compat_layer \
-    libcamera_compat_layer_32 \
-    gst-droid
-
 # UBPorts
  PRODUCT_PACKAGES += \
     libubuntu_application_api \
-    libmedia_compat_layer \
     libdroidmedia \
-    libminisf \
-    miniafservice \
-    libcameraservice \
+    libcamera_compat_layer \
+    libmedia_compat_layer \
     libui_compat_layer \
     libsf_compat_layer \
-    libaudioflingerglue \
+    libminisf \
+    libaudioflingerglue
+
+# droidmedia doesn't support HAL3 yet
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=0
 
 # telepathy-ofono quirks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -182,9 +179,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/camera_config.xml:system/etc/camera/camera_config.xml \
     $(LOCAL_PATH)/configs/camera/csidtg_camera.xml:system/etc/camera/csidtg_camera.xml \
     $(LOCAL_PATH)/configs/camera/csidtg_chromatix.xml:system/etc/camera/csidtg_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_guangbao_p7201_chromatix.xml:system/etc/camera/imx258_guangbao_p7201_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/imx258_sunny_p7201_chromatix.xml:system/etc/camera/imx258_sunny_p7201_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/p7201_s5k4h8_chromatix.xml:system/etc/camera/p7201_s5k4h8_chromatix.xml
+    $(LOCAL_PATH)/configs/camera/p7201_s5k4h8_chromatix.xml:system/etc/camera/p7201_s5k4h8_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/ov8856_chromatix.xml:system/etc/camera/ov8856_chromatix.xml
 
 # Display
 PRODUCT_PACKAGES += \
