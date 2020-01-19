@@ -171,7 +171,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8937 \
     Snap
 
 PRODUCT_COPY_FILES += \
