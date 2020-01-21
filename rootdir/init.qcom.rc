@@ -983,3 +983,14 @@ service init_hcismd_up /system/bin/sh /system/etc/init_hcismd_up.sh
     user root
     group root
     oneshot
+
+service minimedia /system/bin/minimediaservice
+    class main
+    user root
+    group audio camera
+    ioprio rt 4
+
+service minisf /system/bin/minisfservice
+    class main
+    user system
+    group graphics
