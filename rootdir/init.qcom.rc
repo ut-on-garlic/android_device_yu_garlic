@@ -994,3 +994,6 @@ service minisf /system/bin/minisfservice
     class main
     user system
     group graphics
+
+# mtp on boot
+setprop persist.sys.usb.config mtp
