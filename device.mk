@@ -101,6 +101,11 @@ PRODUCT_COPY_FILES += \
     minisfservice \
     libaudioflingerglue
 
+#Ubports : MTP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/usb/setupusb:system/bin/setupusb \
+    $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf 
+
 # droidmedia doesn't support HAL3 yet
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=0
@@ -296,8 +301,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.recovery.qcom.rc \
     init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.recovery.qcom.rc \
+#   init.qcom.usb.sh \
     init.qcom.post_boot.sh \
     init.qcom.bt.sh \
     init.qti.ims.sh \
