@@ -227,8 +227,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 #allow arm64 libhybris
 HYBRIS_MEDIA_32_BIT_ONLY := false
 
-# Fix Rotation
-MINIMEDIA_SENSORSERVER_DISABLE := 1
-
 # Inherit from the proprietary version
 -include vendor/yu/garlic/BoardConfigVendor.mk
